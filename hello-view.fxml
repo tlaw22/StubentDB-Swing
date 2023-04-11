@@ -106,7 +106,7 @@
                 <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
               </textFill>
             </Label>
-                  <TextField layoutX="14.0" layoutY="41.0" />
+                  <TextField fx:id="studentName" layoutX="14.0" layoutY="41.0" />
                   <Label alignment="CENTER" layoutX="14.0" layoutY="83.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Student ID" textAlignment="CENTER" wrapText="false">
                      <font>
                         <Font size="18.0" fx:id="x11" />
@@ -115,7 +115,7 @@
                         <Color red="0.624" green="0.624" blue="0.624" fx:id="x21" />
                      </textFill>
                   </Label>
-                  <TextField layoutX="14.0" layoutY="110.0" />
+                  <TextField fx:id="studentID" layoutX="14.0" layoutY="110.0" />
                   <Label alignment="CENTER" layoutX="14.0" layoutY="152.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Student Route" textAlignment="CENTER" wrapText="false">
                      <font>
                         <Font size="18.0" fx:id="x111" />
@@ -124,7 +124,7 @@
                         <Color red="0.624" green="0.624" blue="0.624" fx:id="x211" />
                      </textFill>
                   </Label>
-                  <TextField layoutX="14.0" layoutY="179.0" />
+                  <TextField fx:id="studentRoute" layoutX="14.0" layoutY="179.0" />
                   <Label alignment="CENTER" layoutX="14.0" layoutY="222.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Stop Location" textAlignment="CENTER" wrapText="false">
                      <font>
                         <Font size="18.0" fx:id="x112" />
@@ -133,8 +133,8 @@
                         <Color red="0.624" green="0.624" blue="0.624" fx:id="x212" />
                      </textFill>
                   </Label>
-                  <TextField layoutX="14.0" layoutY="249.0" />
-                  <Label alignment="CENTER" layoutX="14.0" layoutY="283.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="ContactDate" textAlignment="CENTER" wrapText="false">
+                  <TextField fx:id="stopLocation" layoutX="14.0" layoutY="249.0" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="283.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Contact Date" textAlignment="CENTER" wrapText="false">
                      <font>
                         <Font size="18.0" fx:id="x113" />
                      </font>
@@ -142,8 +142,8 @@
                         <Color red="0.624" green="0.624" blue="0.624" fx:id="x213" />
                      </textFill>
                   </Label>
-                  <TextField layoutX="14.0" layoutY="310.0" />
-                  <Label alignment="CENTER" layoutX="14.0" layoutY="349.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="ContactDate" textAlignment="CENTER" wrapText="false">
+                  <TextField fx:id="contactDate" layoutX="14.0" layoutY="310.0" />
+                  <Label fx:id="contactIme" alignment="CENTER" layoutX="14.0" layoutY="349.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Contact Time" textAlignment="CENTER" wrapText="false">
                      <font>
                         <Font size="18.0" fx:id="x1131" />
                      </font>
@@ -151,7 +151,7 @@
                         <Color red="0.624" green="0.624" blue="0.624" fx:id="x2131" />
                      </textFill>
                   </Label>
-                  <TextField layoutX="14.0" layoutY="376.0" />
+                  <TextField fx:id="contactTime" layoutX="14.0" layoutY="376.0" />
                   <Separator layoutX="1.0" layoutY="404.0" prefWidth="200.0" />
                   <Button layoutX="11.0" layoutY="511.0" mnemonicParsing="false" text="New Log" />
           </children>
@@ -161,7 +161,7 @@
             <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="385.0">
               <children>
                 <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Title:" textFill="$x2" wrapText="false" />
-                        <TextArea layoutX="10.0" layoutY="94.0" prefHeight="358.0" prefWidth="366.0" />
+                        <TextArea fx:id="contactDetail" layoutX="10.0" layoutY="94.0" prefHeight="358.0" prefWidth="366.0" />
                         <Button layoutX="193.0" layoutY="486.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="182.0" text="POST" />
               </children>
             </AnchorPane>
@@ -170,7 +170,7 @@
         <AnchorPane>
           <children>
             <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text=" XML Database Table" textAlignment="CENTER" textFill="$x2" wrapText="false" />
-                  <TableView layoutX="14.0" layoutY="91.0" prefHeight="364.0" prefWidth="266.0">
+                  <TableView fx:id="XMLTable" layoutX="14.0" layoutY="56.0" prefHeight="485.0" prefWidth="266.0">
                     <columns>
                       <TableColumn prefWidth="75.0" text="Name" />
                       <TableColumn prefWidth="75.0" text="Route" />
